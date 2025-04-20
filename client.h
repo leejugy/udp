@@ -8,7 +8,7 @@
 #include <poll.h>
 
 #define UDP_CLIENT_MAX_NUMBER 2
-#define CLIENT_CONNECT_ADDRESS "2.3.4.6"
+#define CLIENT_CONNECT_ADDRESS "2.3.4.5"
 
 typedef struct
 {
