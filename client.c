@@ -26,7 +26,7 @@ static int init_udp_client()
         client[loop].addr.sin_family = AF_INET;
         client[loop].addr.sin_port = htons(UDP_COMMON_PORT);
 #if 1
-        addr.sin_port = htons(1973 + loop); //bind 안쓰면 커널이 임의로 할당. 서버 포트와 클라이언트 포트는 같은 주소에서 같을 수 없다[이미 포트 사용중].
+        addr.sin_port = htons(1972 + loop); //bind 안쓰면 커널이 임의로 할당. 서버 포트와 클라이언트 포트는 같은 주소에서 같을 수 없다[이미 포트 사용중].
         if (bind(client[loop].client_poll.fd, (void *)&addr, sizeof(addr)) < 0)
         {
             perror("fail to bind server");

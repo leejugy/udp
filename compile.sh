@@ -1,4 +1,5 @@
 #source /opt/gcc-beaglebone/environment-setup-armv7at2hf-neon-poky-linux-gnueabi
+export CC="arm-linux-gnueabihf-gcc"
 
 export CFLAGS=""
 export LDFLAGS="-lpthread"
